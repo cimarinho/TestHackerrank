@@ -22,7 +22,7 @@ public class CircularArrayRotationTest {
     }
 
     @Test
-    public void teste() throws Exception {
+    public void test() throws Exception {
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         InputStream inputstr = classLoader.getResourceAsStream("circularArrayRotation/input.txt");
         Scanner s = new Scanner(inputstr);

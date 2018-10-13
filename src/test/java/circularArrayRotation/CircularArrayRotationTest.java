@@ -23,8 +23,6 @@ public class CircularArrayRotationTest {
 
     @Test
     public void teste() throws Exception {
-        System.out.println(new Date());
-        //    Arrays.stream(circularArrayRotation(new int[]{1, 2, 4, 3}, 5, new int[]{0, 1, 2, 3})).forEach(ite -> System.out.println(ite));
         ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
         InputStream inputstr = classLoader.getResourceAsStream("circularArrayRotation/input.txt");
         Scanner s = new Scanner(inputstr);
@@ -62,7 +60,6 @@ public class CircularArrayRotationTest {
         for (int it = 0; it < test.length; it++) {
             assertEquals(ret[it] , test[it]);
         }
-        System.out.println(new Date());
         inputstr.close();
     }
 }
